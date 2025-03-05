@@ -21,6 +21,8 @@ input[type="radio"]{
     display: none;
 }
 
+
+
 /* ----------Slider------ */
 .slider{
     width: 100%;
@@ -398,7 +400,7 @@ footer {
 .whatsapp-button {
     position: fixed;
     bottom: 40vh;
-    right: 10vh;
+    right: 5vh;
     background-color: #25D366;
     border-radius: 50%;
     width: 11vh;
@@ -408,7 +410,7 @@ footer {
     align-items: center;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
     text-decoration: none;
-    z-index: 1000;
+    z-index: 10000;
 }
 
 .whatsapp-button:hover {
