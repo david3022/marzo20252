@@ -68,6 +68,10 @@ input[type="radio"]{
 
 }
 
+
+.card-body{
+    text-align: center;
+}
 /* Images */
 .slides .slide img{
     min-width: 100%;
