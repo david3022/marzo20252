@@ -21,7 +21,13 @@ input[type="radio"] {
     display: none;
 }
 
+.fondo{
+    background-color: transparent;
+}
 
+.fondo img{
+    background-color: transparent;
+}
 
 /* ----------Slider------ */
 .slider {
@@ -68,6 +74,9 @@ input[type="radio"] {
 
 }
 
+.subtitle {
+    font-weight: bold;
+}
 
 
 .card-title {
@@ -316,14 +325,23 @@ p {
 }
 
 .smallcard {
+
     border-radius: 10px;
     height: 180px;
     width: 120px;
-    box-shadow: 0 12px 15px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3); /* Sombra solo debajo */
+    background-color: #fff; /* Fondo blanco para destacar la sombra */
+    margin: 20px; /* Para dar espacio a la tarjeta */
   
 
 }
 
+.name{
+    margin-bottom: 15px;
+}
+.name p{
+    display:none;
+}
 /* .smallcard:hover{
     width: 200px;
     height: 180px ;
