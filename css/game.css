@@ -364,8 +364,8 @@ p {
 .smallcard {
 
     border-radius: 10px;
-    height: 180px;
-    width: 120px;
+    height: 300px;
+    width: 200px;
     box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3); /* Sombra solo debajo */
     
     margin: 20px; /* Para dar espacio a la tarjeta */
@@ -438,7 +438,8 @@ p {
 }
 .explanation{
     
-    margin:15px;
+    margin:25px ;
+    background-color: white;
     display:flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -447,8 +448,8 @@ p {
 }
 
 .explanation img{
-    width:500px;
     height:400px;
+    
     margin-top:15px;
 }
 .mas-vendidos{
