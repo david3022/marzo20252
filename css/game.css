@@ -86,6 +86,11 @@ input[type="radio"] {
 
 }
 
+.floating {
+    animation: float 3s ease-in-out infinite; /* Aplica la animación */
+    transition: transform 0.3s; /* Suaviza cualquier cambio de estado */
+  }
+  
 /* Images */
 .slides .slide img {
     min-width: 100%;
@@ -186,6 +191,24 @@ input[type="radio"] {
     justify-content: center;
     align-items: center;
 }
+
+
+/* Definir la animación */
+@keyframes float {
+    0%, 100% {
+      transform: translateY(0); /* Posición original */
+    }
+    50% {
+      transform: translateY(-20px); /* Subir 10px */
+    }
+  }
+  
+  /* Aplicar la animación a la clase "floating" */
+  .floating {
+    animation: float 3s ease-in-out infinite; /* Duración 3s, repetición infinita */
+    transition: transform 0.3s;
+  }
+  
 
 @media(max-width: 400px) {
 
