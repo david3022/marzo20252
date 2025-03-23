@@ -436,7 +436,33 @@ p {
     width: 25px;
     height: 25px;
 }
+.explanation{
+    
+    margin:15px;
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    border: 1px solid #ccc; /* Define el borde del cuadrado */
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
 
+.explanation img{
+    width:500px;
+    height:400px;
+    margin-top:15px;
+}
+.mas-vendidos{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.mas-vendidos jpg{
+    height:200px;
+    width:300px;
+}
 /*FOOTER*/
 
 footer {
@@ -484,6 +510,9 @@ body {
         flex-wrap: nowrap;
 
     }
+
+   
+    
 }
 
 .card-group.card-group-scroll>.card {
@@ -497,6 +526,17 @@ body {
 
 }
 
+@media (max-width: 768px) {
+    .explanation {
+        flex-direction: column; /* Cambia a una sola columna */
+        align-items: center; /* Centra los elementos en la columna */
+    }
+
+    .explanation img {
+        width: 100%; /* Las imágenes ocuparán todo el ancho disponible */
+        height: auto; /* Ajusta la altura para mantener la proporción */
+    }
+}
 
 .whatsapp-button {
     position: fixed;
