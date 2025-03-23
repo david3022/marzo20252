@@ -367,7 +367,7 @@ p {
     height: 180px;
     width: 120px;
     box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3); /* Sombra solo debajo */
-    background-color: #fff; /* Fondo blanco para destacar la sombra */
+    
     margin: 20px; /* Para dar espacio a la tarjeta */
   
 
