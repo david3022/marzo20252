@@ -364,8 +364,8 @@ p {
 .smallcard {
 
     border-radius: 10px;
-    height: 300px;
-    width: 200px;
+    height: 180px;
+    width: 120px;
     box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3); /* Sombra solo debajo */
     
     margin: 20px; /* Para dar espacio a la tarjeta */
@@ -457,6 +457,7 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
+    object-fit: contain;
 
 }
 
