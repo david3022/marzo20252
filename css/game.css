@@ -57,6 +57,8 @@ input[type="radio"] {
 
 .slider .slides .curr {
     opacity: 1;
+    width:100%;
+    
 }
 
 /* Overlay */
@@ -209,6 +211,11 @@ input[type="radio"] {
     transition: transform 0.3s;
   }
   
+  @media (min-width: 500px) {
+    .slide img{
+        height: 100%;
+    }
+}
 
 @media(max-width: 400px) {
 
