@@ -393,9 +393,10 @@
           </div>
         </div>
       </div>
+    </div>
 
 
-      <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade1" data-bs-slide="prev">
+    <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade1" data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Previous</span>
       </button>
@@ -405,7 +406,7 @@
       </button>
     </div> -->
 
-      <!-- <h3 class="subtitle">Featured games</h3>
+    <!-- <h3 class="subtitle">Featured games</h3>
   <p>Google Play Games on PC</p>
 
   <div id="carouselExampleFade1" class="carousel slide carousel-fade">
@@ -596,7 +597,7 @@
         </div>
       </div>
     </div> -->
-      <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade1" data-bs-slide="prev">
+    <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade1" data-bs-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Previous</span>
     </button>
@@ -606,13 +607,15 @@
     </button>
   </div> -->
 
-    </div>
+
+    <!-- EXPLANATION ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
     <div class="explanation">
       <img src="./img/Games-Images/stores.png" alt="">
       <img src="./img/Games-Images/entrega.png" alt="">
-      <img src="./img/Games-Images/bannerX.jpg" alt="">
     </div>
 
+    <!-- EXPLANATION ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
 
 
     <h3 id="juegos" class="subtitle"><strong>Juegos Digitales</strong></h3>
@@ -1083,7 +1086,7 @@
           <img src="./img/gifs/keyboard2.gif" class="img-fluid" alt="Gif 4">
         </div>
       </div>
-      
+
     </div>
 
 
@@ -1873,6 +1876,39 @@
       </button>
     </div>
 
+    <!---------------- EXPLANATION -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+    <div class="explanation2 subtitle">
+    <h1>Preguntas frecuentes</h1>
+
+    <div class="faq-item subtitle" onclick="toggleFaq('faq1')">
+      <h3>Tienen disponibilidad?</h3>
+      <div id="faq1" class="faq-content">
+        <p>Simpre tenemos disponibilidad de jugos y giftcards.Escríbenos con confianza</p>
+        <button onclick="hideFaq('faq1', event)">Close</button>
+      </div>
+    </div>
+
+    <div class="faq-item subtitle" onclick="toggleFaq('faq2')">
+      <h3>Solo manejan Giftcards y juegos de Estados Unidos? </h3>
+      <div id="faq2" class="faq-content">
+        <p>Tenemos de varias regiones como España o Argentina, aunque casi siempre las de Estados Unidos tienen mejores precios</p>
+        <button onclick="hideFaq('faq2', event)">Close</button>
+      </div>
+    </div>
+
+    <div class="faq-item subtitle" onclick="toggleFaq('faq3')">
+      <h3>Formas de pago</h3>
+      <div id="faq3" class="faq-content">
+        <p>Aceptamos varias formas de pago, principalmente bolívares,escríbenos haciendo click en el botón whatsapp</p>
+        <button onclick="hideFaq('faq3', event)">Close</button>
+      </div>
+    </div>
+
+  </div>
+
+    <div class="explanation">
+      <img src="./img/Games-Images/bannerX.jpg" alt="">
+    </div>
 
 
 
@@ -1927,7 +1963,7 @@
             </div>
             <div class="col-md-3 fondo">
               <!-- <img src="./img/Games-Images/Logo.jpg" class="blackplay" width="260" height="170"> -->
-              <img src="./img/Games-Images/kat4.png" class="logo" height="150">
+              <img src="./img/Games-Images/kat4.png" class="logo" height="50">
             </div>
           </div>
           <div class="row">
@@ -2067,7 +2103,32 @@
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous">
-      </script>
+    </script>
+    <script>
+      function toggleFaq(faqId) {
+            const content = document.getElementById(faqId);
+            const allContents = document.querySelectorAll('.faq-content');
+
+            allContents.forEach((item) => {
+                if (item.id !== faqId) {
+                    item.style.display = 'none'; // Hide others
+                }
+            });
+
+            // Toggle the visibility of the clicked FAQ
+            if (content.style.display === 'block') {
+                content.style.display = 'none';
+            } else {
+                content.style.display = 'block';
+            }
+        }
+
+        function hideFaq(faqId, event) {
+            const content = document.getElementById(faqId);
+            content.style.display = 'none';
+            event.stopPropagation(); // Prevent triggering the toggle function
+        }
+    </script>
 </body>
 
 </html>

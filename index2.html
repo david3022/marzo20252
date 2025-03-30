@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ Dropdown Menu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        .faq-item {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin: 10px 0;
+            padding: 15px;
+            cursor: pointer;
+        }
+
+        .faq-item h3 {
+            margin: 0;
+        }
+
+        .faq-content {
+            display: none;
+            margin-top: 10px;
+        }
+
+        .faq-content button {
+            margin-top: 10px;
+            padding: 5px 10px;
+            background-color: red;
+            color: white;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        .faq-content button:hover {
+            background-color: darkred;
+        }
+    </style>
+</head>
+<body>
+    <h1>FAQs</h1>
+
+    <div class="faq-item" onclick="toggleFaq('faq1')">
+        <h3>Availability</h3>
+        <div id="faq1" class="faq-content">
+            <p>All products are available unless marked as out of stock.</p>
+            <button onclick="hideFaq('faq1', event)">Close</button>
+        </div>
+    </div>
+
+    <div class="faq-item" onclick="toggleFaq('faq2')">
+        <h3>Delivery</h3>
+        <div id="faq2" class="faq-content">
+            <p>Delivery times range from 3 to 7 business days, depending on the location.</p>
+            <button onclick="hideFaq('faq2', event)">Close</button>
+        </div>
+    </div>
+
+    <div class="faq-item" onclick="toggleFaq('faq3')">
+        <h3>Usage</h3>
+        <div id="faq3" class="faq-content">
+            <p>Instructions for using our products are included in the packaging.</p>
+            <button onclick="hideFaq('faq3', event)">Close</button>
+        </div>
+    </div>
+
+    <script>
+        function toggleFaq(faqId) {
+            const content = document.getElementById(faqId);
+            const allContents = document.querySelectorAll('.faq-content');
+
+            allContents.forEach((item) => {
+                if (item.id !== faqId) {
+                    item.style.display = 'none'; // Hide others
+                }
+            });
+
+            // Toggle the visibility of the clicked FAQ
+            if (content.style.display === 'block') {
+                content.style.display = 'none';
+            } else {
+                content.style.display = 'block';
+            }
+        }
+
+        function hideFaq(faqId, event) {
+            const content = document.getElementById(faqId);
+            content.style.display = 'none';
+            event.stopPropagation(); // Prevent triggering the toggle function
+        }
+    </script>
+</body>
+</html>

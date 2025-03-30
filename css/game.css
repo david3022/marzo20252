@@ -23,11 +23,11 @@ input[type="radio"] {
 
 .fondo{
     background-color: transparent;
+    height:150px;
+    overflow: hidden;
 }
 
-.fondo img{
-    background-color: transparent;
-}
+
 
 /* ----------Slider------ */
 .slider {
@@ -57,7 +57,7 @@ input[type="radio"] {
 
 .slider .slides .curr {
     opacity: 1;
-    width:100%;
+    
     
 }
 
@@ -76,7 +76,36 @@ input[type="radio"] {
 
 }
 
+.faq-item {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px 0;
+    padding: 15px;
+    cursor: pointer;
+}
 
+.faq-item h3 {
+    margin: 0;
+}
+
+.faq-content {
+    display: none;
+    margin-top: 10px;
+}
+
+.faq-content button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.faq-content button:hover {
+    background-color: darkred;
+}
 
 .subtitle {
     font-weight: bold;
@@ -443,7 +472,7 @@ p {
     width: 25px;
     height: 25px;
 }
-.explanation{
+.explanation,.explanation2{
     
     margin:25px ;
     background-color: white;
@@ -454,9 +483,15 @@ p {
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
 }
 
+.explanation2{
+   
+    flex-direction: column;
+    
+
+}
+
 .explanation img{
     height:400px;
-    
     margin-top:15px;
 }
 .mas-vendidos{
