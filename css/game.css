@@ -12,9 +12,11 @@
 
 /* -------Common------ */
 body {
-    height: 100vh;
+    
     width: 100%;
-    background-color: #05aaf7;
+    overflow-x: hidden;
+
+    
 }
 
 input[type="radio"] {
@@ -223,7 +225,9 @@ input[type="radio"] {
     align-items: center;
 }
 
-
+.discounts{
+    margin-top: 70px;
+}
 .carrusel {
     height: 25vh;
     display: flex;
@@ -527,7 +531,8 @@ p {
     margin-top:15px;
 }
 .mas-vendidos{
-    
+    width:100%;
+    margin: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -536,8 +541,9 @@ p {
 }
 
 .mas-vendidos jpg{
-    height:200px;
-    width:300px;
+    overflow: hidden;
+    width:150px;
+    object-fit: cover;
 }
 /*FOOTER*/
 
